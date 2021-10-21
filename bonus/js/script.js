@@ -81,6 +81,18 @@ else if(years <= 20){
 
   `;
   }
+
+  else if(years >= 18 && !coupon){
+    fullPrice = fullPrice;
+    document.getElementById('booking').innerHTML = 
+    `
+  
+    <h1>Prezzo Pieno</h1>
+  
+    <h2>Il prezzo finale del biglietto è: ${fullPrice.toFixed(2)} &euro;</h2>
+  
+    `;
+    }
 }
 
 //FROM 21 TO 65
