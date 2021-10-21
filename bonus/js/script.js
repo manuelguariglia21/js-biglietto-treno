@@ -28,6 +28,8 @@ else if(coupon == "SCONTO20" && years > 20){
 let fullPrice = kilometres*0.21;
 
 //booking-area
+
+//over 65
 if(years > 65){
   fullPrice = fullPrice-(fullPrice*0.40);
   document.getElementById('booking').innerHTML = 
@@ -40,6 +42,8 @@ if(years > 65){
   `;
 }
 
+
+//under 21
 else if(years <= 20){
 
   if(years < 18 && coupon){
@@ -78,6 +82,8 @@ else if(years <= 20){
   `;
   }
 }
+
+//FROM 21 TO 65
 
 else{
   document.getElementById('booking').innerHTML = 
