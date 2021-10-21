@@ -5,11 +5,46 @@ console.log('Km:', kilometres);
 const years = prompt("Quanti anni hai?");
 console.log('Years:', years);
 //prezzo del biglietto è definito in base ai km
-const fullPrice = kilometres*0.21;
-//sconto del 20% per i minorenni
-const salePriceJunior = fullPrice-(fullPrice*0.20);
-//sconto del 40% per gli over 65
-const salePriceSenior = fullPrice-(fullPrice*0.40);
+let fullPrice = kilometres*0.21;
+
+//booking-area
+
+if(years > 65){
+  fullPrice = fullPrice-(fullPrice*0.40);
+  document.getElementById('booking').innerHTML = 
+  `
+
+  <h1>Prezzo Scontato per Over 65!</h1>
+
+  <h2>Il prezzo finale del biglietto è: ${fullPrice}&euro;</h2>
+
+  `;
+}
+
+else if(years < 18){
+  fullPrice = fullPrice-(fullPrice*0.20);
+  document.getElementById('booking').innerHTML = 
+  `
+
+  <h1>Prezzo Scontato per Under 18!</h1>
+
+  <h2>Il prezzo finale del biglietto è: ${fullPrice}&euro;</h2>
+
+  `;
+}
+
+else{
+  document.getElementById('booking').innerHTML = 
+  `
+
+  <h1>Prezzo Pieno</h1>
+
+  <h2>Il prezzo finale del biglietto è: ${fullPrice}&euro;</h2>
+
+  `;
+}
+
+
 
 
 
