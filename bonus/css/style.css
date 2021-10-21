@@ -2,11 +2,11 @@
   height: 100vh;
   width: 100vw;
   background-color: #26374b;
-  color: white;
+  color: red;
 }
 
 .ticket{
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -17,14 +17,17 @@
 
 #booking{
   position: absolute;
-  right: 8%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #booking h1{
   font-weight: bolder;
-  font-size: 2.4vw;
+  font-size: 3vw;
 }
 
 #booking h2{
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
