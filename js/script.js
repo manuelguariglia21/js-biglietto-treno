@@ -16,7 +16,7 @@ if(years > 65){
 
   <h1>Prezzo Scontato per Over 65!</h1>
 
-  <h2>Il prezzo finale del biglietto è: ${fullPrice}&euro;</h2>
+  <h2>Il prezzo finale del biglietto è: ${fullPrice.toFixed(2)} &euro;</h2>
 
   `;
 }
@@ -28,7 +28,7 @@ else if(years < 18){
 
   <h1>Prezzo Scontato per Under 18!</h1>
 
-  <h2>Il prezzo finale del biglietto è: ${fullPrice}&euro;</h2>
+  <h2>Il prezzo finale del biglietto è: ${fullPrice.toFixed(2)} &euro;</h2>
 
   `;
 }
@@ -39,7 +39,7 @@ else{
 
   <h1>Prezzo Pieno</h1>
 
-  <h2>Il prezzo finale del biglietto è: ${fullPrice}&euro;</h2>
+  <h2>Il prezzo finale del biglietto è: ${fullPrice.toFixed(2)} &euro;</h2>
 
   `;
 }
